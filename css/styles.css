@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .back-color{
     background-color:#1f201f;
@@ -32,4 +37,50 @@
 }
 body{
     background-color: rgb(174, 184, 133);
+}
+
+
+/* NAVBAR STYLING */
+.navbar{
+    display: flex;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.logo{
+    width: 50px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.left{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.center{
+    flex: 6;
+}
+
+.nav-list{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-list-item{
+    margin-right: 20px;
+    font-size: 20px;
 }
