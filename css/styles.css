@@ -11,6 +11,9 @@ html,body{
 
 .padding{
     padding: 80px 0px;
+    color: #dcdde1;
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
 }
 .padding img{
     width: 100%;
@@ -36,46 +39,75 @@ html,body{
 
 
 /* NAVBAR STYLING */
+#header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
 .navbar{
-    display: flex;
-    background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 99999;
-    font-family: 'Varela Round', sans-serif;
+    padding: 50px 0;
 }
 
-.logo{
-    width: 50px;
-    height: 45px;
-    object-fit: cover;
+.navbar-brand{
+    font-weight: 600;
+    font-size: 1.5em;
 }
 
-.left{
-    flex: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar-dark{
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 10px;
 }
 
-.right{
-    flex: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
+.navbar-dark .navbar-nav .nav-item .nav-link:hover{
+    background: #dcdde1;
+    color: #262626;
 }
 
-.center{
-    flex: 6;
+.home{
+    position: relative;
+    background: url(/FTS_Landing_page/Images/home1.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 220px 0 200px;
+}
+.home h2{
+    margin: 0;
+    padding: 0;
+    font-size: 2.6em;
+    color: #dcdde1;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.nav-list{
-    display: flex;
-    list-style-type: none;
+.home p{
+    margin-top: 1em;
+    padding: 0;
+    font-size: 1em;
+    color: #dcdde1;
 }
 
-.nav-list-item{
-    margin-right: 20px;
-    font-size: 20px;
+.home .btn{
+    background: #718098;
+    color: #fff;
+    border-radius: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navStyle{
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media (max-width:768px){
+   .home{
+       padding: 200px 0;
+   }
+
+   .home h2{
+       font-size: 2em;
+   }
 }
