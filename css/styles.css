@@ -44,7 +44,8 @@ html,body{
 /* NAVBAR STYLING */
 #header{
     position: absolute;
-    z-index: 10;
+    padding: 10px;
+    z-index: 100000;
     width: 100%;
 }
 
